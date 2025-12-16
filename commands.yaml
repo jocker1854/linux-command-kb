@@ -1,0 +1,368 @@
+- id: ls
+  command: ls
+  description: List files in a directory
+  usage: 'ls
+
+    Lists files and folders in the current directory.
+
+    '
+- id: ls_long
+  command: ls -l
+  description: List files with details
+  usage: 'ls -l
+
+    Shows permissions, owner, size, and timestamp.
+
+    '
+- id: mkdir
+  command: mkdir test
+  description: Create a new directory
+  usage: 'mkdir test
+
+    Creates a directory named test.
+
+    '
+- id: rmdir
+  command: rmdir test
+  description: Delete an empty directory
+  usage: 'rmdir test
+
+    Removes an empty directory.
+
+    '
+- id: rm
+  command: rm file.txt
+  description: Delete a file
+  usage: 'rm file.txt
+
+    Permanently deletes a file.
+
+    '
+- id: rm_recursive
+  command: rm -r folder
+  description: Delete folder recursively
+  usage: 'rm -r folder
+
+    Deletes a directory and its contents.
+
+    '
+- id: cp
+  command: cp a.txt b.txt
+  description: Copy files
+  usage: 'cp a.txt b.txt
+
+    Copies a file.
+
+    '
+- id: mv
+  command: mv a.txt b.txt
+  description: Move or rename files
+  usage: 'mv a.txt b.txt
+
+    Renames or moves files.
+
+    '
+- id: touch
+  command: touch file.txt
+  description: Create empty file
+  usage: 'touch file.txt
+
+    Creates a new empty file.
+
+    '
+- id: cat
+  command: cat file.txt
+  description: View file contents
+  usage: 'cat file.txt
+
+    Displays file content.
+
+    '
+- id: less
+  command: less file.txt
+  description: View file with scrolling
+  usage: 'less file.txt
+
+    Scrollable file viewer.
+
+    '
+- id: head
+  command: head file.txt
+  description: Show first lines of file
+  usage: 'head file.txt
+
+    Shows first 10 lines.
+
+    '
+- id: tail
+  command: tail file.txt
+  description: Show last lines of file
+  usage: 'tail file.txt
+
+    Shows last 10 lines.
+
+    '
+- id: chmod
+  command: chmod 755 file.sh
+  description: Change file permissions
+  usage: 'chmod 755 file.sh
+
+    Sets permissions.
+
+    '
+- id: chown
+  command: chown user:user file
+  description: Change file owner
+  usage: 'chown user:user file
+
+    Changes ownership.
+
+    '
+- id: find
+  command: find . -name file.txt
+  description: Search for files
+  usage: 'find . -name file.txt
+
+    Finds files by name.
+
+    '
+- id: grep
+  command: grep text file.txt
+  description: Search text in files
+  usage: 'grep text file.txt
+
+    Searches text patterns.
+
+    '
+- id: wc
+  command: wc file.txt
+  description: Count lines words characters
+  usage: 'wc file.txt
+
+    Counts lines, words, bytes.
+
+    '
+- id: sort
+  command: sort file.txt
+  description: Sort file content
+  usage: 'sort file.txt
+
+    Sorts text lines.
+
+    '
+- id: uniq
+  command: uniq file.txt
+  description: Remove duplicate lines
+  usage: 'uniq file.txt
+
+    Filters duplicates.
+
+    '
+- id: df
+  command: df -h
+  description: Show disk usage
+  usage: 'df -h
+
+    Displays disk space.
+
+    '
+- id: du
+  command: du -h
+  description: Directory size usage
+  usage: 'du -h
+
+    Shows directory sizes.
+
+    '
+- id: free
+  command: free -m
+  description: Show memory usage
+  usage: 'free -m
+
+    Displays RAM usage.
+
+    '
+- id: top
+  command: top
+  description: Real-time process monitor
+  usage: 'top
+
+    Shows live system stats.
+
+    '
+- id: htop
+  command: htop
+  description: Advanced process viewer
+  usage: 'htop
+
+    Interactive process viewer.
+
+    '
+- id: ps
+  command: ps aux
+  description: List running processes
+  usage: 'ps aux
+
+    Shows all processes.
+
+    '
+- id: kill
+  command: kill PID
+  description: Terminate a process
+  usage: 'kill PID
+
+    Stops a process.
+
+    '
+- id: uname
+  command: uname -a
+  description: System information
+  usage: 'uname -a
+
+    Kernel and system info.
+
+    '
+- id: whoami
+  command: whoami
+  description: Current user
+  usage: 'whoami
+
+    Prints logged-in user.
+
+    '
+- id: uptime
+  command: uptime
+  description: System running time
+  usage: 'uptime
+
+    Shows how long system is running.
+
+    '
+- id: history
+  command: history
+  description: Command history
+  usage: 'history
+
+    Lists previous commands.
+
+    '
+- id: clear
+  command: clear
+  description: Clear terminal screen
+  usage: 'clear
+
+    Clears terminal output.
+
+    '
+- id: reboot
+  command: reboot
+  description: Restart system
+  usage: 'reboot
+
+    Reboots the system.
+
+    '
+- id: shutdown
+  command: shutdown now
+  description: Shutdown system
+  usage: 'shutdown now
+
+    Shuts down system.
+
+    '
+- id: ping
+  command: ping google.com
+  description: Check network connectivity
+  usage: 'ping google.com
+
+    Tests network connection.
+
+    '
+- id: ifconfig
+  command: ifconfig
+  description: Network interfaces
+  usage: 'ifconfig
+
+    Shows network info.
+
+    '
+- id: ip
+  command: ip a
+  description: IP address info
+  usage: 'ip a
+
+    Shows IP addresses.
+
+    '
+- id: wget
+  command: wget url
+  description: Download files
+  usage: 'wget url
+
+    Downloads from web.
+
+    '
+- id: curl
+  command: curl url
+  description: Fetch web content
+  usage: 'curl url
+
+    Fetches URL content.
+
+    '
+- id: tar
+  command: tar -xvf file.tar
+  description: Extract tar archive
+  usage: 'tar -xvf file.tar
+
+    Extracts tar files.
+
+    '
+- id: zip
+  command: zip a.zip file
+  description: Create zip archive
+  usage: 'zip a.zip file
+
+    Compress files.
+
+    '
+- id: unzip
+  command: unzip a.zip
+  description: Extract zip archive
+  usage: 'unzip a.zip
+
+    Extracts zip files.
+
+    '
+- id: man
+  command: man ls
+  description: Manual pages
+  usage: 'man ls
+
+    Opens manual.
+
+    '
+- id: alias
+  command: alias ll='ls -l'
+  description: Create command alias
+  usage: 'alias ll=''ls -l''
+
+    Creates shortcut command.
+
+    '
+- id: date
+  command: date
+  description: Show current date
+  usage: 'date
+
+    Displays date and time.
+
+    '
+- id: cal
+  command: cal
+  description: Show calendar
+  usage: 'cal
+
+    Displays calendar.
+
+    '

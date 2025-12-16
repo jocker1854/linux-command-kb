@@ -17,7 +17,7 @@ ENV/
 Thumbs.db
 
 # YAML storage
-commands.yaml
+#commands.yaml
 
 # Logs
 *.log
