@@ -12,7 +12,7 @@ repo.load()
 search = SemanticSearch()
 search.build(repo.commands)
 
-
+#application setup
 root = tk.Tk()
 handlers = UIHandlers(repo, search, None)
 ui = MainWindow(root, handlers)
