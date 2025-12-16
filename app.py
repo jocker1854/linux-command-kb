@@ -5,7 +5,7 @@ from search.semantic import SemanticSearch
 from ui.handlers import UIHandlers
 from ui.main_window import MainWindow
 
-# Application setup
+
 repo = CommandRepository()
 repo.load()
 
