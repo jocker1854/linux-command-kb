@@ -71,5 +71,3 @@ python app.py
     ls -l
     Shows file permissions, owner, size, and timestamp.
 ```
-
-# Happy Coding
